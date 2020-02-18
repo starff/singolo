@@ -3,18 +3,23 @@
   src: url(./assets/fonts/Lato-Bold.ttf);
   src: url(./assets/fonts/Lato-Black.ttf);
   src: url(./assets/fonts/Lato-Regular.ttf);
-  src: url(./assets/fonts/Lato-Light.ttf);
+  src: url(./assets/fonts/Lato-Light.ttf); 
  }
  @font-face {
   font-family: Lato-Black;
   src: url(./assets/fonts/Lato-Black.ttf);
  }
 
-
-.wrapper{
+body {
   width: 1020px;
-  background-color: aqua;
   margin: 0 auto;
+}
+.wrapper{
+  width: 92.2%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 /* header */
@@ -22,20 +27,16 @@
   width: 100%;
   height: 95px;
   background-color:#2d303a;
-}
-.header_wrapper {
-  width: 92.2%;
-  height: 89px;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  box-shadow: inset 0px -6px 0px 0px #323746;
 }
 .logo {
-  margin-top: 7px;
+  display: flex;
+  height: 95px;
+  align-items: center;
 }
 .logo--link {
   text-decoration: none;
+  margin-top: 1px;
 }
 .logo--name {
   font-size: 25px;
@@ -44,7 +45,7 @@
   font-family: "Lato";
   font-weight: 700;
   text-align: left;
-  letter-spacing: -0.8px;
+  letter-spacing: -0.15px;
 }
 .logo--star {
   font-size: 25px;
@@ -55,10 +56,14 @@
   text-align: left;
 }
 .navigation_menu {
+  height: 95px;
   display: flex;
-  width: 371px;
+  width: 372px;
+  align-items: center;
   justify-content: space-between;
-  margin-top: 7px;
+}
+.navigation_menu--item {
+  margin-top: 2px;
 }
 .navigation_menu--link {
   text-decoration: none;
@@ -68,17 +73,24 @@
   font-family: "Lato";
   font-weight: 700;
   text-align: left;
-  letter-spacing: -0.2px;
 }
-.navigation_menu--link:not(:first-child)::before {
+.navigation_menu--item:not(:last-child)::after {
   content: ".";
   position: relative;
   bottom: 3px;
-  left: -13px;
-  font-weight: 400;
+  left: 13px;
+  font-weight: 700;
   font-size: 19px;
   font-family: "Lato";
   color: #494e62;
+}
+.navigation_menu--item:last-child {
+  position: relative;
+  top: 0px;
+}
+.navigation_menu--item {
+  position: relative;
+  bottom: 2px;
 }
 .navigation_menu--link:hover {
   color: #f06c64;
@@ -94,26 +106,21 @@
   height: 600px;
   width: 100%;
   background-color:#f06c64;
-}
-.slider_wrapper {
-  width: 92.2%;
-  height: 594px;
-  margin: 0 auto;
+  box-shadow: inset 0px -6px 0px 0px #ea676b;
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
 .slider--image-vertical {
   cursor: pointer;
   width: 240px;
   height: 483px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 .slider--image-horizontal {
   cursor: pointer;
   width: 483px;
   height: 240px;
-  margin-bottom: 5px;
+  margin-bottom: 11px;
   margin-left: 19px;
 }
 .slider--left {
@@ -121,7 +128,7 @@
   border: none;
   width: 16px;
   height: 27px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   margin-left: 2px;
   cursor: pointer;
 }
@@ -136,7 +143,7 @@
   border: none;
   width: 16px;
   height: 27px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   margin-left: 2px;
   cursor: pointer;
 }
@@ -154,13 +161,16 @@
   height: 502px;
   width: 100%;
   background-color:#f2f2f2;
-}
-.services_wrapper {
-  width: 92.2%;
-  height: 494px;
-  margin: 0 auto;
+  box-shadow: inset 0px -8px 0px 0px #ffffff;
   display: flex;
   flex-direction: column;
+}
+.wrapper_column {
+  display: flex;
+  flex-direction: column;
+  width: 92.2%;
+  margin: 0 auto;
+  justify-content: space-between;
 }
 .services--name {
   font-size: 30px;
@@ -195,15 +205,21 @@
   margin-top: -34px;
 }
 .services_list--icon {
-  margin-right: 20px;
-  margin-bottom: 88px;
+  margin-right: 26px;
+  margin-left: 0px;
+  margin-bottom: 92px;
+  cursor: pointer;
 }
 .services_list--info {
   display: flex;
   flex-direction: column;
+  margin-top: 2px;
+  margin-left: -7px;
+  margin-right: 1px;
 }
 .services_list--link {
   text-decoration: none;
+  margin-left: -1px
 }
 .services_list--name {
   font-size: 18px;
@@ -212,6 +228,9 @@
   font-family: "Lato-Black";
   font-weight: 900;
   text-align: left;
+}
+.services_list--name:hover {
+  opacity: 0.7;
 }
 .services_list--description {
   width: 219px;
@@ -223,8 +242,6 @@
   font-weight: 400;
   text-align: left;
   margin-top: 10px;
-}
-.services_border {
-  height: 8px;
-  background-color: #ffffff;
+  text-align: justify;
+  text-overflow: clip;
 }
