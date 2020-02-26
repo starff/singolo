@@ -151,6 +151,9 @@ body {
   font-weight: 900;
   text-align: left;
   margin-top: 14px;
+  height: 18px;
+  overflow: hidden;
+
 }
 .employees--description {
   width: 300px;
