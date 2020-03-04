@@ -9,7 +9,10 @@
   font-family: Lato-Black;
   src: url(./assets/fonts/Lato-Black.ttf);
  }
-
+* {
+  margin: 0;
+  padding: 0;
+}
 body {
   width: 1020px;
   margin: 0 auto;
@@ -63,6 +66,7 @@ body {
   justify-content: space-between;
 }
 .navigation_menu--item {
+  list-style: none;
   margin-top: 2px;
 }
 .navigation_menu--link {
@@ -203,6 +207,7 @@ body {
 .services_list--item {
   display: flex;
   margin-top: -34px;
+  list-style: none;
 }
 .services_list--icon {
   margin-right: 26px;
@@ -278,6 +283,7 @@ body {
   
 }
 .search_tools--item {
+  list-style: none;
   border-radius: 5px;
   border: 1px solid #666d89;
   font-size: 12px;
@@ -309,6 +315,7 @@ body {
   margin-top: 19px;
 }
 .project--item {
+  list-style: none;
   margin-bottom: 16px;
   cursor: pointer;
 }
@@ -354,6 +361,7 @@ body {
   align-items: center;
   justify-content: space-between;
   margin-top: 47px;
+  list-style: none;
 }
 .employees--avatar {
 }
@@ -533,6 +541,7 @@ body {
   margin-top: 21px;
 }
 .contact--item {
+  list-style: none;
   position: relative;
   width: 200px;
   font-size: 12px;
