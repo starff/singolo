@@ -389,7 +389,7 @@ body {
   margin-top: 9px;
 }
 .facebook {
-  background-image: url(./assets/images/facebook.svg);
+  background-image: url("./assets/images/facebook.svg");
   width: 34px;
   height: 34px;
   display: inline-block;
