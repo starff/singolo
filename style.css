@@ -39,7 +39,7 @@ body {
 }
 .logo--link {
   text-decoration: none;
-  margin-top: 1px;
+  margin-top: -8px;
 }
 .logo--name {
   font-size: 25px;
