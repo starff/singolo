@@ -196,6 +196,7 @@ body {
   margin-top: 27px;
   text-align: justify;
   word-spacing: -1.4px;
+  overflow: hidden;
 }
 .services_list {
   display: flex;
@@ -208,12 +209,14 @@ body {
   display: flex;
   margin-top: -34px;
   list-style: none;
+  margin-bottom: 4px;
 }
 .services_list--icon {
   margin-right: 26px;
   margin-left: 0px;
-  margin-bottom: 92px;
+  margin-bottom: 91px;
   cursor: pointer;
+  margin-top: 2px;
 }
 .services_list--info {
   display: flex;
@@ -239,16 +242,16 @@ body {
 }
 .services_list--description {
   width: 219px;
-  height: 128px;
+  height: 66px;
   font-size: 12px;
   line-height: 22px;
   color: #767e9e;
   font-family: "Lato";
   font-weight: 400;
-  text-align: left;
   margin-top: 10px;
   text-align: justify;
   text-overflow: clip;
+  overflow: hidden;
 }
 .portfolio {
   height: 870px;
