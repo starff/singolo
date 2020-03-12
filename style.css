@@ -96,8 +96,11 @@ body {
   position: relative;
   bottom: 2px;
 }
-.navigation_menu--link:hover {
+.navigation_menu--link.active {
   color: #f06c64;
+}
+.navigation_menu--link:hover {
+  color: #d16c67;
 }
 .header_border {
   height: 6px;
