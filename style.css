@@ -77,7 +77,9 @@ body {
   font-family: "Lato";
   font-weight: 700;
   text-align: left;
+  padding-top: 6px;
 }
+
 .navigation_menu--item:not(:last-child)::after {
   content: ".";
   position: relative;
@@ -90,14 +92,17 @@ body {
 }
 .navigation_menu--item:last-child {
   position: relative;
-  top: 0px;
+  top: -2px;
 }
 .navigation_menu--item {
   position: relative;
   bottom: 2px;
+  display: flex;
+  align-items: center;
 }
 .navigation_menu--link.active {
   color: #f06c64;
+  
 }
 .navigation_menu--link:hover {
   color: #d16c67;
@@ -112,23 +117,122 @@ body {
 .slider {
   height: 600px;
   width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.slide  {
+  height: 600px;
+  width: 100%;
   background-color:#f06c64;
   box-shadow: inset 0px -6px 0px 0px #ea676b;
   display: flex;
   align-items: center;
+  display: none;
+  position: relative;
+  animation: 0.5s ease-in-out;
+  margin: 0 auto;
+}
+.slide-wrapper {
+  justify-content: center;
+}
+.slider--image-left {
+  position: relative;
+  margin-top: 63px;
+  left: 26px;
+}
+.slider--image-center {
+  position: relative;
+  margin-top: 43px;
+  z-index: 2;
+}
+.slider--image-right {
+  position: relative;
+    margin-top: 63px;
+    right: 26px;
+    z-index: 1;
+}
+.active,
+.next {
+display: block;
+}
+.next {
+position: absolute;
+top: 0;
+width: 100%;
+}
+.slider--left {
+  position: absolute;
+  top: 280px;
+  left: 40px;
+}
+.slider--right {
+  position: absolute;
+  top: 280px;
+  right: 40px;
+}
+.to-left {
+  animation-name: left;
+}
+.from-right {
+  animation-name: right;
+}
+.to-right {
+  animation-name: right;
+  animation-direction: reverse;
+}
+.from-left {
+  animation-name: left;
+  animation-direction: reverse;
+}
+@keyframes left {
+  from {
+    left: 0;
+  }
+  to {
+    left: -100%;
+  }
+}
+
+@keyframes right {
+  from {
+    left: 100%;
+  }
+  to {
+    left: 0;
+  }
+}
+.second {
+  height: 600px;
+  width: 100%;
+  background-color:#648BF0;
+  box-shadow: inset 0px -6px 0px 0px white;
 }
 .slider--image-vertical {
   cursor: pointer;
   width: 240px;
   height: 483px;
-  margin-bottom: 10px;
+  margin-top: 53px;
+}
+.vertical-black {
+  position: absolute;
+  display: none;
+  top: 53px;
+  left: 112px;
+  cursor: pointer;
+}
+.horizontal-black {
+  position: absolute;
+  display: none;
+  top: 174px;
+  right: 139px;
+  cursor: pointer;
 }
 .slider--image-horizontal {
   cursor: pointer;
   width: 483px;
   height: 240px;
-  margin-bottom: 11px;
-  margin-left: 19px;
+  margin-left: 72px;
+  margin-top: 53px;
 }
 .slider--left {
   background: url('./assets/images/left.svg') no-repeat top;
