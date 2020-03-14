@@ -122,7 +122,7 @@ let imgK = document.getElementById('k').src;
 let imgN = document.getElementById('n').src;
 
 all.addEventListener('click', (event) => {
-
+  projectList.forEach(item => item.style.outline = 'none');
   document.getElementById('a').src = imgA;
   document.getElementById('b').src = imgB;
   document.getElementById('c').src = imgC;
@@ -138,6 +138,7 @@ all.addEventListener('click', (event) => {
 });
 
 web.addEventListener('click', (event) => {
+  projectList.forEach(item => item.style.outline = 'none');
   document.getElementById('a').src = imgN;
   document.getElementById('b').src = imgK;
   document.getElementById('c').src = imgL;
@@ -152,6 +153,7 @@ web.addEventListener('click', (event) => {
   document.getElementById('n').src = imgA;
 });
 graphic.addEventListener('click', (event) => {
+  projectList.forEach(item => item.style.outline = 'none');
   document.getElementById('a').src = imgL;
   document.getElementById('b').src = imgJ;
   document.getElementById('c').src = imgN;
@@ -166,6 +168,7 @@ graphic.addEventListener('click', (event) => {
   document.getElementById('n').src = imgC;
 });
 artwork.addEventListener('click', (event) => {
+  projectList.forEach(item => item.style.outline = 'none');
   document.getElementById('a').src = imgK;
   document.getElementById('b').src = imgN;
   document.getElementById('c').src = imgJ;
@@ -180,4 +183,35 @@ artwork.addEventListener('click', (event) => {
   document.getElementById('n').src = imgB;
 });
 
+// form
+const form = document.querySelector('form');
+const submit = document.getElementById('submit');
+const ok = document.getElementById('ok');
+const shadow = document.querySelector('.shadow');
+let subject = document.getElementById('subject');
+let details = document.getElementById('details');
+let topic = document.getElementById('topic');
+let topicValue = document.getElementById('topic-value');
+let description = document.getElementById('description');
+let descriptionValue = document.getElementById('description-value');
+
+form.addEventListener('submit', (event) => {
+  shadow.style.display ='block';
+  if(subject.value != '') {
+    topic.innerText = 'Тема: ';
+    topicValue.innerText = subject.value;
+  } else {
+    topic.innerText = 'Без темы';
+  };
+  if(details.value != '') {
+    description.innerText = 'Описание: ';
+    descriptionValue.innerText = details.value;
+  } else {
+    description.innerText = 'Без описания';
+  };
+  event.preventDefault()
+});
+ok.addEventListener('mousedown', (event) => {
+  shadow.style.display ='none';
+});
 

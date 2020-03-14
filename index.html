@@ -171,9 +171,20 @@
               <form class="form" action="#" method="POST">
                 <input type="text" class="form--text" name="name" required placeholder="Name (Required)">
                 <input type="email" class="form--text" name="email" required placeholder="Email (Required)">
-                <input type="text" class="form--text" name="subject" placeholder="Subject">
-                <textarea class="form--textarea" name="details" id="" cols="30" rows="10" placeholder="Describe your project in detail..."></textarea>
-                <input type="submit" class="form--button" value="Send">
+                <input type="text" class="form--text" name="subject" id="subject" placeholder="Subject">
+                <textarea class="form--textarea" name="details" id="details" cols="30" rows="10" placeholder="Describe your project in detail..."></textarea>
+                <button class="form--button" id="submit">Send</button>
+                <div class="shadow">
+                  <div class="alert">
+                    <ul class="alert--list">
+                      <li class="alert--item">Письмо отправлено</li>
+                      <li class="alert--item"><span id="topic"></span><span id="topic-value"></span></li>
+                      <li class="alert--item"><span id="description"></span><span id="description-value"></span></li>
+                    </ul>
+                    <button class="form--button" id="ok">OK</button>
+                  </div>
+                </div>
+                
               </form> 
               <div class="contact">
                 <h3 class="contact--name">Contact Information</h3>

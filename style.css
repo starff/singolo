@@ -792,3 +792,40 @@ width: 100%;
 .linkedin:hover, .facebook:hover, .google:hover, .twitter:hover {
   opacity: 0.5;
 }
+
+.shadow {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  opacity: 0.5;
+}
+.alert {
+  position: fixed;
+  top: calc(50% - 100px);
+  left: calc(50% - 150px);
+  width: 300px;
+  height: 200px;
+  background-color: #7e110b;
+  border: 3px solid #b12a23;
+  border-radius: 5px;
+}
+.alert--item {
+  color: #f48c8f;
+  font-size: 12px;
+  line-height: 22px;
+  font-family: "Lato";
+  font-weight: 400;
+  text-align: left;
+  letter-spacing: 0.1px;
+}
+.alert--list {
+  margin: 10px 20px;
+}
+#ok {
+  position: relative;
+  left: calc(50% - 30px);
+}
