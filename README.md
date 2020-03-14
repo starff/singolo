@@ -1,1 +1,1 @@
-# singolo
+# [Click here](https://starff.github.io/singolo/)

@@ -9,30 +9,42 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body> 
-    <header class="header">
+    <header class="header"><a name="home"></a>
       <div class="wrapper">
         <h1 class="logo"><a class="logo--link" href="#"><span class="logo--name">SINGOLO</span><span class="logo--star">*</span></a></h1>
         <nav>
           <ul class="navigation_menu">
-              <li class="navigation_menu--item"><a class="navigation_menu--link" href="#">HOME</a></li>
-              <li class="navigation_menu--item"><a class="navigation_menu--link" href="#">SERVICES</a></li>
-              <li class="navigation_menu--item"><a class="navigation_menu--link" href="#">PORTFOLIO</a></li>
-              <li class="navigation_menu--item"><a class="navigation_menu--link" href="#">ABOUT</a></li>
-              <li class="navigation_menu--item"><a class="navigation_menu--link" href="#">CONTACT</a></li>
+              <li class="navigation_menu--item"><a class="navigation_menu--link active" href="#home">HOME</a></li>
+              <li class="navigation_menu--item"><a class="navigation_menu--link" href="#services">SERVICES</a></li>
+              <li class="navigation_menu--item"><a class="navigation_menu--link" href="#portfolio">PORTFOLIO</a></li>
+              <li class="navigation_menu--item"><a class="navigation_menu--link" href="#about">ABOUT</a></li>
+              <li class="navigation_menu--item"><a class="navigation_menu--link" href="#contact">CONTACT</a></li>
           </ul>
         </nav>
       </div>
     </header>
     <main class="main">
         <section class="slider">
-          <div class="wrapper">
-            <button class="slider--left"></button>
-            <img class="slider--image-vertical" src="./assets/images/vertical.png" alt="first_img">
-            <img class="slider--image-horizontal" src="./assets/images/horizontal.png" alt="last_img">
-            <button class="slider--right"></button>
+          <div class="slide active">
+            <div class="wrapper slide-wrapper">
+              <img class="slider--image-vertical" src="./assets/images/vertical.png" alt="first_img">
+              <img class="slider--image-horizontal" src="./assets/images/horizontal.png" alt="last_img">
+              <img class="vertical-black" src="./assets/images/phone-vertical-black.png" alt="first_img">
+              <img class="horizontal-black" src="./assets/images/phone-horizontal-black.png" alt="last_img">
+            </div>
           </div>
+          <div class="slide second">
+            <div class="wrapper slide-wrapper">
+              <img class="slider--image-left" src="./assets/images/slidercont1.png" alt="left phone">
+              <img class="slider--image-center" src="./assets/images/slidercont.png" alt="center phone">
+              <img class="slider--image-right" src="./assets/images/slidercont2.png" alt="right phone">
+            </div>
+          </div>
+          <button class="slider--left"></button>
+          <button class="slider--right"></button>
+          
         </section>
-        <section class="services">
+        <section class="services"><a name="services"></a>
           <div class="wrapper_column">
             <h2 class="services--name">Our Services</h2>
             <p class="services--description">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
@@ -82,36 +94,33 @@
             </ul>
           </div>
         </section>
-        <section class="portfolio">
+        <section class="portfolio"><a name="portfolio"></a>
           <div class="wrapper_column">
             <h2 class="portfolio--name">Portfolio</h2>
             <p class="portfolio--description">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
             <div class="search_tools">
-              <button class="search_tools--item" autofocus>All</button>
-              <button class="search_tools--item">Web Design</button>
-              <button class="search_tools--item">Graphic Design</button>
-              <button class="search_tools--item">Artwork</button>
+              <button class="search_tools--item activeTag" id="all">All</button>
+              <button class="search_tools--item" id="web">Web Design</button>
+              <button class="search_tools--item" id="graphic">Graphic Design</button>
+              <button class="search_tools--item" id="artwork">Artwork</button>
             </div>
             <ul class="project">
-              <li class="project--item"><a class="project--link"><img class="project--image" src="./assets/images/Project1.png" alt="Project1"></a></li>
-              <li class="project--item"><a class="project--link"><img class="project--image" src="./assets/images/Project2.png" alt="Project2"></a></li>
-              <li class="project--item"><a class="project--link"><img class="project--image" src="./assets/images/Project3.png" alt="Project3"></a></li>
-              <li class="project--item"><a class="project--link"><img class="project--image" src="./assets/images/Project4.png" alt="Project4"></a></li>
-              <li class="project--item"><a class="project--link"><img class="project--image" src="./assets/images/Project5.png" alt="Project5"></a></li>
-              <li class="project--item"><a class="project--link"><img class="project--image" src="./assets/images/Project6.png" alt="Project6"></a></li>
-              <li class="project--item"><a class="project--link"><img class="project--image" src="./assets/images/Project7.png" alt="Project7"></a></li>
-              <li class="project--item"><a class="project--link"><img class="project--image" src="./assets/images/Project8.png" alt="Project8"></a></li>
-              <li class="project--item"><a class="project--link"><img class="project--image" src="./assets/images/Project9.png" alt="Project9"></a></li>
-              <li class="project--item"><a class="project--link"><img class="project--image" src="./assets/images/Project10.png" alt="Project10"></a></li>
-              <li class="project--item"><a class="project--link"><img class="project--image" src="./assets/images/Project11.png" alt="Project11"></a></li>
-              <li class="project--item"><a class="project--link"><img class="project--image" src="./assets/images/Project12.png" alt="Project12"></a></li>
-              <li class="project--item"><a class="project--link"><img class="project--image" src="./assets/images/Project1.png" alt="Project13"></a></li>
-              <li class="project--item"><a class="project--link"><img class="project--image" src="./assets/images/Project2.png" alt="Project14"></a></li>
-              <li class="project--item"><a class="project--link"><img class="project--image" src="./assets/images/Project3.png" alt="Project15"></a></li>
+              <li class="project--item"><a class="project--link"><img id="a" class="project--image web" src="./assets/images/Project1.png" alt="Project1"></a></li>
+              <li class="project--item"><a class="project--link"><img id="b" class="project--image graphic" src="./assets/images/Project2.png" alt="Project2"></a></li>
+              <li class="project--item"><a class="project--link"><img id="c" class="project--image artwork" src="./assets/images/Project3.png" alt="Project3"></a></li>
+              <li class="project--item"><a class="project--link"><img id="d" class="project--image web" src="./assets/images/Project4.png" alt="Project4"></a></li>
+              <li class="project--item"><a class="project--link"><img id="e" class="project--image artwork" src="./assets/images/Project5.png" alt="Project5"></a></li>
+              <li class="project--item"><a class="project--link"><img id="f" class="project--image graphic" src="./assets/images/Project6.png" alt="Project6"></a></li>
+              <li class="project--item"><a class="project--link"><img id="g" class="project--image artwork" src="./assets/images/Project7.png" alt="Project7"></a></li>
+              <li class="project--item"><a class="project--link"><img id="h" class="project--image graphic" src="./assets/images/Project8.png" alt="Project8"></a></li>
+              <li class="project--item"><a class="project--link"><img id="j" class="project--image web" src="./assets/images/Project9.png" alt="Project9"></a></li>
+              <li class="project--item"><a class="project--link"><img id="l" class="project--image graphic" src="./assets/images/Project10.png" alt="Project10"></a></li>
+              <li class="project--item"><a class="project--link"><img id="k" class="project--image artwork" src="./assets/images/Project11.png" alt="Project11"></a></li>
+              <li class="project--item"><a class="project--link"><img id="n" class="project--image web" src="./assets/images/Project12.png" alt="Project12"></a></li>
             </ul>
           </div>  
         </section>
-        <section class="about_us">
+        <section class="about_us"><a name="about"></a>
           <div class="wrapper_column">
             <h2 class="about_us--name">About Us</h2>
             <p class="about_us--description">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
@@ -152,7 +161,7 @@
             </ul>
           </div>
         </section>
-        <section class="quote">
+        <section class="quote"><a name="contact"></a>
           <div class="wrapper_column">
             <div class="quote--head">
               <h2 class="quote--name">Get a Quote</h2>
@@ -162,16 +171,27 @@
               <form class="form" action="#" method="POST">
                 <input type="text" class="form--text" name="name" required placeholder="Name (Required)">
                 <input type="email" class="form--text" name="email" required placeholder="Email (Required)">
-                <input type="text" class="form--text" name="subject" placeholder="Subject">
-                <textarea class="form--textarea" name="details" id="" cols="30" rows="10" placeholder="Describe your project in detail..."></textarea>
-                <input type="submit" class="form--button" value="Send">
+                <input type="text" class="form--text" name="subject" id="subject" placeholder="Subject">
+                <textarea class="form--textarea" name="details" id="details" cols="30" rows="10" placeholder="Describe your project in detail..."></textarea>
+                <button class="form--button" id="submit">Send</button>
+                <div class="shadow">
+                  <div class="alert">
+                    <ul class="alert--list">
+                      <li class="alert--item">Письмо отправлено</li>
+                      <li class="alert--item"><span id="topic"></span><span id="topic-value"></span></li>
+                      <li class="alert--item"><span id="description"></span><span id="description-value"></span></li>
+                    </ul>
+                    <button class="form--button" id="ok">OK</button>
+                  </div>
+                </div>
+                
               </form> 
               <div class="contact">
                 <h3 class="contact--name">Contact Information</h3>
                 <p class="contact--description">Quisque hendrerit purus dapibus, ornare nibh vitae, viver&shy;ra nibh. Fusce vitae aliquam tellus. Proin sit amet volutpat libero. Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis.</p>
                 <ul class="contact--list">
                   <li class="contact--item"><span class="contact--location">Elm St. 14/05 Lost City</span></li>
-                  <li class="contact--item"><a class="contact--tel" href="tel:03528 331 86 35">03528 331 86 35</a></li>
+                  <li class="contact--item"><a class="contact--tel" href="tel:035283318635">03528 331 86 35</a></li>
                   <li class="contact--item"><a class="contact--mail" href="mailto:info@singolo.com">info@singolo.com</a></li>
                 </ul>
               </div>
@@ -192,5 +212,6 @@
           </div>
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
