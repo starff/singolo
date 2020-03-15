@@ -1,11 +1,30 @@
 // header
+const home = document.getElementById('home'); 
+const services = document.getElementById('services'); 
+const portfolio = document.getElementById('portfolio'); 
+const about = document.getElementById('about'); 
+const contact = document.getElementById('contact'); 
 const menu = document.querySelector('.navigation_menu');
 let list = menu.querySelectorAll('.navigation_menu--link');
+
 function changeSection() {
-  list.forEach(item => item.classList.remove('active'));
+  home.classList.remove('active');
+  services.classList.remove('active');
+  portfolio.classList.remove('active');
+  about.classList.remove('active');
+  contact.classList.remove('active');
   event.target.classList.add('active');
 };
-menu.addEventListener('click', changeSection);
+home.addEventListener('click', changeSection);
+services.addEventListener('click', changeSection);
+portfolio.addEventListener('click', changeSection);
+about.addEventListener('click', changeSection);
+contact.addEventListener('click', changeSection);
+
+
+
+
+
 
 //slider
 let items = document.querySelectorAll('.slide');
@@ -102,6 +121,7 @@ const project = document.querySelector('.project');
 let projectList = project.querySelectorAll('.project--image');
 function addOutline() {
   projectList.forEach(item => item.style.outline = 'none');
+  project.style.outline = 'none';
   event.target.style.outline = '5px solid #F06C64';
   event.target.style.transition = '0.3s';
 };
@@ -199,19 +219,25 @@ form.addEventListener('submit', (event) => {
   shadow.style.display ='block';
   if(subject.value != '') {
     topic.innerText = 'Тема: ';
+    topicValue.innerText = '';
     topicValue.innerText = subject.value;
   } else {
     topic.innerText = 'Без темы';
+    topicValue.innerText = '';
   };
   if(details.value != '') {
     description.innerText = 'Описание: ';
+    descriptionValue.innerText = '';
     descriptionValue.innerText = details.value;
   } else {
     description.innerText = 'Без описания';
+    descriptionValue.innerText = '';
   };
   event.preventDefault()
 });
 ok.addEventListener('mousedown', (event) => {
   shadow.style.display ='none';
+  subject.value = '';
+  details.value = '';
 });
 

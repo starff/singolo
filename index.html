@@ -6,19 +6,20 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>singolo</title>
   <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css">
+  <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="style.css">
 </head>
 <body> 
-    <header class="header"><a name="home"></a>
+    <header class="header"><a name="home-anc"></a>
       <div class="wrapper">
         <h1 class="logo"><a class="logo--link" href="#"><span class="logo--name">SINGOLO</span><span class="logo--star">*</span></a></h1>
         <nav>
           <ul class="navigation_menu">
-              <li class="navigation_menu--item"><a class="navigation_menu--link active" href="#home">HOME</a></li>
-              <li class="navigation_menu--item"><a class="navigation_menu--link" href="#services">SERVICES</a></li>
-              <li class="navigation_menu--item"><a class="navigation_menu--link" href="#portfolio">PORTFOLIO</a></li>
-              <li class="navigation_menu--item"><a class="navigation_menu--link" href="#about">ABOUT</a></li>
-              <li class="navigation_menu--item"><a class="navigation_menu--link" href="#contact">CONTACT</a></li>
+              <li class="navigation_menu--item"><a class="navigation_menu--link active" href="#home-anc" id="home">HOME</a></li>
+              <li class="navigation_menu--item"><a class="navigation_menu--link" href="#services-anc" id="services">SERVICES</a></li>
+              <li class="navigation_menu--item"><a class="navigation_menu--link" href="#portfolio-anc" id="portfolio">PORTFOLIO</a></li>
+              <li class="navigation_menu--item"><a class="navigation_menu--link" href="#about-anc" id="about">ABOUT</a></li>
+              <li class="navigation_menu--item"><a class="navigation_menu--link" href="#contact-anc" id="contact">CONTACT</a></li>
           </ul>
         </nav>
       </div>
@@ -27,8 +28,8 @@
         <section class="slider">
           <div class="slide active">
             <div class="wrapper slide-wrapper">
-              <img class="slider--image-vertical" src="./assets/images/vertical.png" alt="first_img">
-              <img class="slider--image-horizontal" src="./assets/images/horizontal.png" alt="last_img">
+              <img class="slider--image-vertical" src="./assets/images/phone-vertical.png" alt="first_img">
+              <img class="slider--image-horizontal" src="./assets/images/phone-horizontal.png" alt="last_img">
               <img class="vertical-black" src="./assets/images/phone-vertical-black.png" alt="first_img">
               <img class="horizontal-black" src="./assets/images/phone-horizontal-black.png" alt="last_img">
             </div>
@@ -44,7 +45,7 @@
           <button class="slider--right"></button>
           
         </section>
-        <section class="services"><a name="services"></a>
+        <section class="services"><a name="services-anc"></a>
           <div class="wrapper_column">
             <h2 class="services--name">Our Services</h2>
             <p class="services--description">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
@@ -94,7 +95,7 @@
             </ul>
           </div>
         </section>
-        <section class="portfolio"><a name="portfolio"></a>
+        <section class="portfolio"><a name="portfolio-anc"></a>
           <div class="wrapper_column">
             <h2 class="portfolio--name">Portfolio</h2>
             <p class="portfolio--description">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
@@ -120,7 +121,7 @@
             </ul>
           </div>  
         </section>
-        <section class="about_us"><a name="about"></a>
+        <section class="about_us"><a name="about-anc"></a>
           <div class="wrapper_column">
             <h2 class="about_us--name">About Us</h2>
             <p class="about_us--description">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
@@ -161,7 +162,7 @@
             </ul>
           </div>
         </section>
-        <section class="quote"><a name="contact"></a>
+        <section class="quote"><a name="contact-anc"></a>
           <div class="wrapper_column">
             <div class="quote--head">
               <h2 class="quote--name">Get a Quote</h2>
@@ -177,9 +178,9 @@
                 <div class="shadow">
                   <div class="alert">
                     <ul class="alert--list">
-                      <li class="alert--item">Письмо отправлено</li>
+                      <li class="alert--name">Письмо отправлено</li>
                       <li class="alert--item"><span id="topic"></span><span id="topic-value"></span></li>
-                      <li class="alert--item"><span id="description"></span><span id="description-value"></span></li>
+                      <li class="alert--item textarea"><span id="description"></span><span id="description-value"></span></li>
                     </ul>
                     <button class="form--button" id="ok">OK</button>
                   </div>
@@ -190,7 +191,7 @@
                 <h3 class="contact--name">Contact Information</h3>
                 <p class="contact--description">Quisque hendrerit purus dapibus, ornare nibh vitae, viver&shy;ra nibh. Fusce vitae aliquam tellus. Proin sit amet volutpat libero. Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis.</p>
                 <ul class="contact--list">
-                  <li class="contact--item"><span class="contact--location">Elm St. 14/05 Lost City</span></li>
+                  <li class="contact--item "><span class="contact--location">Elm St. 14/05 Lost City</span></li>
                   <li class="contact--item"><a class="contact--tel" href="tel:035283318635">03528 331 86 35</a></li>
                   <li class="contact--item"><a class="contact--mail" href="mailto:info@singolo.com">info@singolo.com</a></li>
                 </ul>
