@@ -43,7 +43,6 @@ body {
 }
 .logo--link {
   text-decoration: none;
-  margin-top: -8px;
 }
 .logo--name {
   font-size: 25px;
@@ -140,17 +139,51 @@ body {
 .slide-wrapper {
   justify-content: center;
 }
-.slider--image-left {
+.iphone--vertical-shadow {
+  position: absolute;
+  top: 52px;
+  left: 112px;
+}
+.iphone--horizontal-shadow {
+  position: absolute;
+  top: 174px;
+  right: 111px;
+}
+.iphone--vertical {
+  position: absolute;
+  top: 53px;
+  left: 111px;
+  cursor: pointer;
+}
+.iphone--horizontal {
+  position: absolute;
+  top: 174px;
+  right: 137px;
+  cursor: pointer;
+}
+.iphone--vertical-display {
+  position: absolute;
+  top: 118px;
+  left: 125.2px;
+  cursor: pointer;
+}
+.iphone--horizontal-display {
+  position: absolute;
+  top: 188px;
+  right: 202px;
+  cursor: pointer;
+}
+.iphone--left {
   position: relative;
   margin-top: 63px;
   left: 26px;
 }
-.slider--image-center {
+.iphone--center {
   position: relative;
   margin-top: 43px;
   z-index: 2;
 }
-.slider--image-right {
+.iphone--right {
   position: relative;
     margin-top: 63px;
     right: 26px;
@@ -211,33 +244,6 @@ width: 100%;
   width: 100%;
   background-color:#648BF0;
   box-shadow: inset 0px -6px 0px 0px white;
-}
-.slider--image-vertical {
-  cursor: pointer;
-  width: 240px;
-  height: 483px;
-  margin-top: 53px;
-}
-.vertical-black {
-  position: absolute;
-  display: none;
-  top: 53px;
-  left: 113px;
-  cursor: pointer;
-}
-.horizontal-black {
-  position: absolute;
-  display: none;
-  top: 175px;
-  right: 137px;
-  cursor: pointer;
-}
-.slider--image-horizontal {
-  cursor: pointer;
-  width: 483px;
-  height: 240px;
-  margin-left: 72px;
-  margin-top: 53px;
 }
 .slider--left {
   background: url('./assets/images/left.svg') no-repeat top;
@@ -329,6 +335,7 @@ width: 100%;
   margin-top: -34px;
   list-style: none;
 <<<<<<< HEAD
+
 
   margin-bottom: 3px;
 =======

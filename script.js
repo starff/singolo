@@ -77,29 +77,37 @@ document.querySelector('.slider--right').addEventListener('click', function() {
 });
 
 // slider black phone
-document.querySelector('.slider--image-vertical').addEventListener('click', (event) => {
-  let blackDisplay = document.querySelector('.vertical-black');
-  if ( blackDisplay.style.display == 'block' ) {
-    blackDisplay.style.display = 'none';
+const horDisplay = document.querySelector('.iphone--horizontal-display');
+const vertDisplay = document.querySelector('.iphone--vertical-display');
+document.querySelector('.iphone--vertical').addEventListener('click', (event) => {
+  if ( vertDisplay.style.display == 'none' ) {
+    vertDisplay.style.display = 'block';
   } else {
-      blackDisplay.style.display = 'block';
+    vertDisplay.style.display = 'none';
   };
-  blackDisplay.addEventListener('click', (event) => {
-    blackDisplay.style.display = 'none';
-  })
 });
-document.querySelector('.slider--image-horizontal').addEventListener('click', (event) => {
-  let blackDisplay = document.querySelector('.horizontal-black');
-  if ( blackDisplay.style.display == 'block' ) {
-    blackDisplay.style.display = 'none';
+vertDisplay.addEventListener('click', (event) => {
+  if ( vertDisplay.style.display == 'none' ) {
+    vertDisplay.style.display = 'block';
   } else {
-      blackDisplay.style.display = 'block';
+    vertDisplay.style.display = 'none';
   };
-  blackDisplay.addEventListener('click', (event) => {
-    blackDisplay.style.display = 'none';
-  })
 });
 
+document.querySelector('.iphone--horizontal').addEventListener('click', (event) => {
+  if ( horDisplay.style.display == 'none' ) {
+    horDisplay.style.display = 'block';
+  } else {
+    horDisplay.style.display = 'none';
+  };
+});
+horDisplay.addEventListener('click', (event) => {
+  if ( horDisplay.style.display == 'none' ) {
+    horDisplay.style.display = 'block';
+  } else {
+    horDisplay.style.display = 'none';
+  };
+});
 //portfolio 
 const all = document.getElementById('all');
 const web = document.getElementById('web');
@@ -240,4 +248,3 @@ ok.addEventListener('mousedown', (event) => {
   subject.value = '';
   details.value = '';
 });
-
