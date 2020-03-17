@@ -24,13 +24,23 @@ body {
   align-items: center;
   justify-content: space-between;
 }
-
+#home-anc,
+#services-anc,
+#portfolio-anc,
+#about-anc,
+#contact-anc {
+  position: absolute; 
+  top: -95px;
+}
+section {
+  position: relative;
+}
 /* header */
 .header {
   position: sticky;
   top: 0px;
   left: calc(50% - 510px);
-  z-index: 2;
+  z-index: 3;
   width: 100%;
   height: 95px;
   background-color:#2d303a;
@@ -280,6 +290,9 @@ width: 100%;
   background-color: #ea676b;
 }
 .services {
+  background-clip: padding-box;
+  border-top: 95px solid transparent;
+	margin-top: -95px;
   height: 500px;
   width: 100%;
   background-color: #f2f2f2;
@@ -334,13 +347,7 @@ width: 100%;
   display: flex;
   margin-top: -34px;
   list-style: none;
-<<<<<<< HEAD
-
-
   margin-bottom: 3px;
-=======
-  margin-bottom: 4px;
->>>>>>> master
 }
 .services_list--icon {
   margin-right: 26px;
@@ -385,6 +392,9 @@ width: 100%;
   overflow: hidden;
 }
 .portfolio {
+  background-clip: padding-box;
+  border-top: 95px solid transparent;
+	margin-top: -95px;
   height: 870px;
   background-color: #2d303a;
   box-shadow: inset 0px -6px 0px 0px #323746;
@@ -484,6 +494,9 @@ width: 100%;
 
 
 .about_us {
+  background-clip: padding-box;
+  border-top: 95px solid transparent;
+	margin-top: -95px;
   height: 733px;
   background-color: #f2f2f2;
   box-shadow: inset 0px -6px 0px 0px #ffffff;
@@ -579,6 +592,9 @@ width: 100%;
   opacity: 0.5;
 }
 .quote {
+  background-clip: padding-box;
+  border-top: 95px solid transparent;
+	margin-top: -95px;
   height: 654px;
   background-color: #f06c64;
   box-shadow: inset 0px -6px 0px 0px #ea676b;
