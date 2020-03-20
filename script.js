@@ -2,8 +2,8 @@
 const home = document.getElementById('home'); 
 const services = document.getElementById('services'); 
 const portfolio = document.getElementById('portfolio'); 
-const about = document.getElementById('about'); 
-const contact = document.getElementById('contact'); 
+const about = document.getElementById('about_us'); 
+const contact = document.getElementById('quote'); 
 const menu = document.querySelector('.navigation_menu');
 let list = menu.querySelectorAll('.navigation_menu--link');
 
@@ -34,6 +34,32 @@ for (let anchor of anchors) {
     });
   });
 };
+document.addEventListener('scroll', onScroll);
+function onScroll() {
+  const currentPosition = window.scrollY;
+
+  const links = document.querySelectorAll('.navigation_menu a');
+  const places = document.querySelectorAll('section');
+  places.forEach((item) => {
+    if(window.innerHeight + currentPosition == document.body.offsetHeight) {
+      links.forEach((elem) => {
+        elem.classList.remove('active');
+        if(item.getAttribute('class') === elem.getAttribute('id')) {
+        contact.classList.add('active');
+        }
+      })
+    }
+    else if(item.offsetTop <= currentPosition && (item.offsetTop + item.offsetHeight) >= currentPosition) {
+      links.forEach((elem) => {
+        elem.classList.remove('active');
+        if(item.getAttribute('class') === elem.getAttribute('id')) {
+        elem.classList.add('active');
+        }
+      })
+    }
+    
+  });
+}
 
 
 //slider
@@ -145,87 +171,50 @@ function addOutline() {
 };
 project.addEventListener('click', addOutline);
 
-
-let imgA = document.getElementById('a').src;
-let imgB = document.getElementById('b').src;
-let imgC = document.getElementById('c').src;
-let imgD = document.getElementById('d').src;
-let imgE = document.getElementById('e').src;
-let imgF = document.getElementById('f').src;
-let imgG = document.getElementById('g').src;
-let imgH = document.getElementById('h').src;
-let imgJ = document.getElementById('j').src;
-let imgL = document.getElementById('l').src;
-let imgK = document.getElementById('k').src;
-let imgN = document.getElementById('n').src;
-
 all.addEventListener('click', (event) => {
   projectList.forEach(item => item.style.outline = 'none');
-  document.getElementById('a').src = imgA;
-  document.getElementById('b').src = imgB;
-  document.getElementById('c').src = imgC;
-  document.getElementById('d').src = imgD;
-  document.getElementById('e').src = imgE;
-  document.getElementById('f').src = imgF;
-  document.getElementById('g').src = imgG;
-  document.getElementById('h').src = imgH;
-  document.getElementById('j').src = imgJ;
-  document.getElementById('l').src = imgL;
-  document.getElementById('k').src = imgK;
-  document.getElementById('n').src = imgN;
 });
 
 web.addEventListener('click', (event) => {
   projectList.forEach(item => item.style.outline = 'none');
-  document.getElementById('a').src = imgN;
-  document.getElementById('b').src = imgK;
-  document.getElementById('c').src = imgL;
-  document.getElementById('d').src = imgJ;
-  document.getElementById('e').src = imgH;
-  document.getElementById('f').src = imgG;
-  document.getElementById('g').src = imgF;
-  document.getElementById('h').src = imgE;
-  document.getElementById('j').src = imgD;
-  document.getElementById('l').src = imgC;
-  document.getElementById('k').src = imgB;
-  document.getElementById('n').src = imgA;
 });
 graphic.addEventListener('click', (event) => {
   projectList.forEach(item => item.style.outline = 'none');
-  document.getElementById('a').src = imgL;
-  document.getElementById('b').src = imgJ;
-  document.getElementById('c').src = imgN;
-  document.getElementById('d').src = imgK;
-  document.getElementById('e').src = imgF;
-  document.getElementById('f').src = imgE;
-  document.getElementById('g').src = imgH;
-  document.getElementById('h').src = imgG;
-  document.getElementById('j').src = imgB;
-  document.getElementById('l').src = imgA;
-  document.getElementById('k').src = imgD;
-  document.getElementById('n').src = imgC;
+  
 });
 artwork.addEventListener('click', (event) => {
   projectList.forEach(item => item.style.outline = 'none');
-  document.getElementById('a').src = imgK;
-  document.getElementById('b').src = imgN;
-  document.getElementById('c').src = imgJ;
-  document.getElementById('d').src = imgL;
-  document.getElementById('e').src = imgG;
-  document.getElementById('f').src = imgH;
-  document.getElementById('g').src = imgE;
-  document.getElementById('h').src = imgF;
-  document.getElementById('j').src = imgC;
-  document.getElementById('l').src = imgD;
-  document.getElementById('k').src = imgA;
-  document.getElementById('n').src = imgB;
 });
+
+
+
+// portfolio random
+
+function portfolioRandom () {
+  let elements = document.querySelectorAll('.project--item');
+  const container = document.querySelector('.project');
+  let arr = Array.from(elements);
+  let twins = arr;
+  arr.sort ( () => Math.random() - 0.5);
+  container.innerHTML ='';
+  arr.forEach((item) => {
+    container.appendChild(item);
+  })
+};
+all.addEventListener('click', portfolioRandom);
+web.addEventListener('click', portfolioRandom);
+graphic.addEventListener('click', portfolioRandom);
+artwork.addEventListener('click', portfolioRandom);
+
+
 
 // form
 const form = document.querySelector('form');
 const submit = document.getElementById('submit');
 const ok = document.getElementById('ok');
 const shadow = document.querySelector('.shadow');
+let name = document.getElementById('name');
+let email = document.getElementById('email');
 let subject = document.getElementById('subject');
 let details = document.getElementById('details');
 let topic = document.getElementById('topic');
@@ -255,6 +244,8 @@ form.addEventListener('submit', (event) => {
 });
 ok.addEventListener('mousedown', (event) => {
   shadow.style.display ='none';
+  name.value = '';
+  email.value = '';
   subject.value = '';
   details.value = '';
 });

@@ -18,14 +18,14 @@
               <li class="navigation_menu--item"><a class="navigation_menu--link active" href="#home-anc" id="home">HOME</a></li>
               <li class="navigation_menu--item"><a class="navigation_menu--link" href="#services-anc" id="services">SERVICES</a></li>
               <li class="navigation_menu--item"><a class="navigation_menu--link" href="#portfolio-anc" id="portfolio">PORTFOLIO</a></li>
-              <li class="navigation_menu--item"><a class="navigation_menu--link" href="#about-anc" id="about">ABOUT</a></li>
-              <li class="navigation_menu--item"><a class="navigation_menu--link" href="#contact-anc" id="contact">CONTACT</a></li>
+              <li class="navigation_menu--item"><a class="navigation_menu--link" href="#about_us-anc" id="about_us">ABOUT</a></li>
+              <li class="navigation_menu--item"><a class="navigation_menu--link" href="#quote-anc" id="quote">CONTACT</a></li>
           </ul>
         </nav>
       </div>
     </header>
     <main class="main">
-        <section class="slider"><a id="home-anc"></a>
+        <section class="home"><a id="home-anc"></a>
           <div class="slide active">
             <div class="wrapper slide-wrapper">
               <img class="iphone--vertical-shadow" src="./assets/images/phone-vertical-shadow.png" alt="first_img">
@@ -122,7 +122,7 @@
             </ul>
           </div>  
         </section>
-        <section class="about_us"><a id="about-anc"></a>
+        <section class="about_us"><a id="about_us-anc"></a>
           <div class="wrapper_column">
             <h2 class="about_us--name">About Us</h2>
             <p class="about_us--description">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
@@ -163,7 +163,7 @@
             </ul>
           </div>
         </section>
-        <section class="quote"><a id="contact-anc"></a>
+        <section class="quote"><a id="quote-anc"></a>
           <div class="wrapper_column">
             <div class="quote--head">
               <h2 class="quote--name">Get a Quote</h2>
@@ -171,8 +171,8 @@
             </div>
             <div class="quote--contact">
               <form class="form" action="#" method="POST">
-                <input type="text" class="form--text" name="name" required placeholder="Name (Required)">
-                <input type="email" class="form--text" name="email" required placeholder="Email (Required)">
+                <input type="text" class="form--text" name="name" id='name' required placeholder="Name (Required)">
+                <input type="email" class="form--text" name="email" id='email' required placeholder="Email (Required)">
                 <input type="text" class="form--text" name="subject" id="subject" placeholder="Subject">
                 <textarea class="form--textarea" name="details" id="details" cols="30" rows="10" placeholder="Describe your project in detail..."></textarea>
                 <button class="form--button" id="submit">Send</button>
