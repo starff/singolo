@@ -193,11 +193,34 @@ artwork.addEventListener('click', (event) => {
 function portfolioRandom () {
   let elements = document.querySelectorAll('.project--item');
   const container = document.querySelector('.project');
+  let arrForImageOrig = [];
+  let arrForImage = [];
   let arr = Array.from(elements);
-  let twins = arr;
-  arr.sort ( () => Math.random() - 0.5);
+  let origin = arr;
+  origin.forEach((elem) => {
+    arrForImageOrig.push(elem.querySelector('.project--image'));
+  })
   container.innerHTML ='';
+  sort();
+  function sort() {
+    arr.sort ( () => Math.random() - 0.5);
+    
+    arr.forEach((elem) => {
+      arrForImage.push(elem.querySelector('.project--image'));
+    });
+    // checkRandom();
+  }
+function checkRandom() {
+  for(let i = 0; i < arrForImageOrig.length; i++) {
+    // console.log(arrForImage[i]);
+    if(arrForImageOrig[i].getAttribute('src') === arrForImage[i].getAttribute('src')) {
+      sort();
+      i=0;
+    }
+  }
+}
   arr.forEach((item) => {
+    // console.log(item);
     container.appendChild(item);
   })
 };

@@ -24,6 +24,13 @@ body {
   align-items: center;
   justify-content: space-between;
 }
+.wrapper-header{
+  width: 92.2%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 #home-anc,
 #services-anc,
 #portfolio-anc,
@@ -125,6 +132,14 @@ section {
   height: 6px;
   background-color: #323746;
 } 
+.burger-button {
+  display: none;
+  background: url('./assets/images/Burger-menu-icon.svg') no-repeat top;
+  border: none;
+  width: 25px;
+  height: 20px;
+  cursor: pointer;
+}
 
 /* main */
 
@@ -293,7 +308,6 @@ width: 100%;
   background-clip: padding-box;
   border-top: 95px solid transparent;
 	margin-top: -95px;
-  height: 500px;
   width: 100%;
   background-color: #f2f2f2;
   box-shadow: inset 0px -6px 0px 0px #ffffff;
@@ -316,45 +330,43 @@ width: 100%;
 }
 .services--name {
   font-size: 30px;
-  line-height: 18px;
+  line-height: 35px;
   color: #666d89;
   font-family: "Lato-Black";
   font-weight: 900;
   text-align: left;
-  margin-top: 69px;
+  margin-top: 59px;
 }
 .services--description {
   width: 939px;
-  height: 57px;
   font-size: 18px;
   line-height: 30px;
   color: #767e9e;
   font-family: "Lato";
   font-weight: 300;
-  margin-top: 27px;
+  margin-top: 20px;
   text-align: justify;
   word-spacing: -1.4px;
-  overflow: hidden;
 }
 .services_list {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  margin-top: 80px;
+  margin-top: 19px;
+  margin-bottom: 64px;
 }
 .services_list--item {
   display: flex;
-  margin-top: -34px;
   list-style: none;
-  margin-bottom: 3px;
+  margin-top: 26px;
 }
 .services_list--icon {
   margin-right: 26px;
   margin-left: 0px;
-  margin-bottom: 91px;
+  margin-bottom: 33px;
   cursor: pointer;
-  margin-top: 2px;
+  margin-top: 2px
 }
 .services_list--info {
   display: flex;
@@ -876,4 +888,159 @@ width: 100%;
 }
 .textarea {
   height: 75px;
+}
+
+@media(max-width: 1020px) {
+  body {
+    width: 100%;
+  }
+  .wrapper{
+    width: calc(100% - 80px);
+  }
+  .wrapper-header{
+    width: calc(100% - 80px);
+  }
+  .wrapper_column {
+    width: calc(100% - 80px);
+  }
+  .header {
+    width: 100%;
+    height: 95px;
+  }
+  .home {
+    height: 58.8vw;
+    width: 100%;
+  }
+  .slide  {
+    height: 58.8vw;
+    width: 100%;
+  }
+  .slide-wrapper {
+    justify-content: center;
+  }
+  .iphone--vertical-shadow {
+    width: 23.53vw;
+    height: 47.35vw;
+    top: 5.1vw;
+    left: 10.98vw;
+  }
+  .iphone--horizontal-shadow {
+    width: 47.35vw;
+    height: 23.53vw;
+    top: 17.06vw;
+    right: 10.88vw;
+  }
+  .iphone--vertical {
+    width: 21.18vw;
+    height: 44.9vw;
+    top: 5.19vw;
+    left: 10.88vw;
+  }
+  .iphone--horizontal {
+    width: 44.9vw;
+    height: 21.18vw;
+    top: 17.06vw;
+    right: 13.43vw;
+  }
+  .iphone--vertical-display {
+    width: 18.43vw;
+    height: 32.65vw;;
+    top: 11.57vw;
+    left: 12.27vw;
+  }
+  .iphone--horizontal-display {
+    width: 32.65vw;
+    height: 18.43vw;
+    top: 18.43vw;
+    right: 19.8vw;
+  }
+  .iphone--left {
+    width: 15.39vw;
+    height: 30.78vw;
+    margin-top: 6.18vw;
+    left: 2.55vw;
+  }
+  .iphone--center {
+    width: 25vw;
+    height: 50.29vw;
+    margin-top: 4.22vw;
+  }
+  .iphone--right {
+    width: 15.39vw;
+    height: 30.78vw;
+    margin-top: 6.18vw;
+    right:  2.55vw;
+  }
+  .slider--left {
+    top: 27.45vw;
+    left: 3.92vw;
+  }
+  .slider--right {
+    top: 27.45vw;
+    right: 3.92vw;
+  }
+  .services {
+    height: auto;
+    width: 100%;
+  }
+  .services--name {
+    font-size: 30px;
+    line-height: 18px;
+    color: #666d89;
+    font-family: "Lato-Black";
+    font-weight: 900;
+    text-align: left;
+    margin-top: 6.76vw;
+  }
+  .services--description {
+    width: 100%;
+  }
+}
+
+@media(max-width: 768px) {
+  .wrapper-header{
+    width: calc(100% - 40px);
+    justify-content: center;
+    position: relative;
+  }
+  .wrapper_column {
+    width: calc(100% - 60px);
+  }
+  .header {
+    width: 100%;
+    height: 71px;
+  }
+  .logo {
+    display: flex;
+    height: 71px;
+    align-items: center;
+  }
+  .logo--name {
+    font-size: 19.6875px;
+    line-height: 24px;
+  }
+  .logo--star {
+    font-size: 19.6875px;
+    line-height: 24px;
+  }
+  .navigation_menu {
+    display: none;
+  }
+  .burger-button {
+    display: block;
+    position: absolute;
+    top: 23px;
+    left: 0px;
+  }
+  .services_list {
+    margin-bottom: 8.33vw;
+  }
+  
+}
+
+@media(max-width: 375px) {
+  .header {
+    width: 100%;
+    height: 71px;
+  }
 }
