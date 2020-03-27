@@ -37,8 +37,10 @@ for (let anchor of anchors) {
 document.addEventListener('scroll', onScroll);
 function onScroll() {
   const currentPosition = window.scrollY;
-
-  const links = document.querySelectorAll('.navigation_menu a');
+  let links = document.querySelectorAll('.navigation_menu a');
+  if (links.length == 0) {
+    links = document.querySelectorAll('.burger_menu a');
+  }
   const places = document.querySelectorAll('section');
   places.forEach((item) => {
     if(window.innerHeight + currentPosition == document.body.offsetHeight) {
@@ -60,8 +62,29 @@ function onScroll() {
     
   });
 }
-
-
+ //burger 
+ const burger = document.getElementById('burger');
+ const nav = document.querySelector('.navigation_menu');
+ burger.addEventListener('click', ((event) => {
+   if(nav.classList.contains("burger_menu")) {
+    burger.style.transform = 'rotate(0deg)';
+    burger.style.transition = '0.5s';
+    nav.classList.remove('burger_menu');
+    nav.classList.add('navigation_menu');
+   }else {
+    burger.style.transform = 'rotate(90deg)';
+    burger.style.transition = '0.5s';
+    nav.classList.remove('navigation_menu');
+    nav.classList.add('burger_menu');
+   }
+   event.target.classList.remove('burger_menu');
+ }));  
+nav.addEventListener('click', ((event) => {
+  nav.classList.remove('burger_menu');
+  nav.classList.add('navigation_menu');
+  burger.style.transform = 'rotate(0deg)';
+  burger.style.transition = '0.5s';
+})); 
 //slider
 let items = document.querySelectorAll('.slide');
 let currentItem = 0; 

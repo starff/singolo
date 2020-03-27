@@ -14,7 +14,7 @@
       <div class="wrapper-header">
         <h1 class="logo"><a class="logo--link" href="#"><span class="logo--name">SINGOLO</span><span class="logo--star">*</span></a></h1>
         <nav>
-          <ul class="navigation_menu">
+          <ul class="navigation_menu" id="nav">
               <li class="navigation_menu--item"><a class="navigation_menu--link active" href="#home-anc" id="home">HOME</a></li>
               <li class="navigation_menu--item"><a class="navigation_menu--link" href="#services-anc" id="services">SERVICES</a></li>
               <li class="navigation_menu--item"><a class="navigation_menu--link" href="#portfolio-anc" id="portfolio">PORTFOLIO</a></li>
@@ -22,8 +22,7 @@
               <li class="navigation_menu--item"><a class="navigation_menu--link" href="#quote-anc" id="quote">CONTACT</a></li>
           </ul>
         </nav>
-        <button class="burger-button"></button>
-      </div>
+        <button class="burger-button" id="burger"></button>
     </header>
     <main class="main">
         <section class="home"><a id="home-anc"></a>
@@ -108,18 +107,18 @@
               <button class="search_tools--item" id="artwork">Artwork</button>
             </div>
             <ul class="project">
-              <li class="project--item"><a class="project--link"><img id="a" class="project--image web" src="./assets/images/Project1.png" alt="Project1"></a></li>
-              <li class="project--item"><a class="project--link"><img id="b" class="project--image graphic" src="./assets/images/Project2.png" alt="Project2"></a></li>
-              <li class="project--item"><a class="project--link"><img id="c" class="project--image artwork" src="./assets/images/Project3.png" alt="Project3"></a></li>
-              <li class="project--item"><a class="project--link"><img id="d" class="project--image web" src="./assets/images/Project4.png" alt="Project4"></a></li>
-              <li class="project--item"><a class="project--link"><img id="e" class="project--image artwork" src="./assets/images/Project5.png" alt="Project5"></a></li>
-              <li class="project--item"><a class="project--link"><img id="f" class="project--image graphic" src="./assets/images/Project6.png" alt="Project6"></a></li>
-              <li class="project--item"><a class="project--link"><img id="g" class="project--image artwork" src="./assets/images/Project7.png" alt="Project7"></a></li>
-              <li class="project--item"><a class="project--link"><img id="h" class="project--image graphic" src="./assets/images/Project8.png" alt="Project8"></a></li>
-              <li class="project--item"><a class="project--link"><img id="j" class="project--image web" src="./assets/images/Project9.png" alt="Project9"></a></li>
-              <li class="project--item"><a class="project--link"><img id="l" class="project--image graphic" src="./assets/images/Project10.png" alt="Project10"></a></li>
-              <li class="project--item"><a class="project--link"><img id="k" class="project--image artwork" src="./assets/images/Project11.png" alt="Project11"></a></li>
-              <li class="project--item"><a class="project--link"><img id="n" class="project--image web" src="./assets/images/Project12.png" alt="Project12"></a></li>
+              <li class="project--item"><img id="a" class="project--image web" src="./assets/images/Project1.png" alt="Project1"></li>
+              <li class="project--item"><img id="b" class="project--image graphic" src="./assets/images/Project2.png" alt="Project2"></li>
+              <li class="project--item"><img id="c" class="project--image artwork" src="./assets/images/Project3.png" alt="Project3"></li>
+              <li class="project--item"><img id="d" class="project--image web" src="./assets/images/Project4.png" alt="Project4"></li>
+              <li class="project--item"><img id="e" class="project--image artwork" src="./assets/images/Project5.png" alt="Project5"></li>
+              <li class="project--item"><img id="f" class="project--image graphic" src="./assets/images/Project6.png" alt="Project6"></li>
+              <li class="project--item"><img id="g" class="project--image artwork" src="./assets/images/Project7.png" alt="Project7"></li>
+              <li class="project--item"><img id="h" class="project--image graphic" src="./assets/images/Project8.png" alt="Project8"></li>
+              <li class="project--item"><img id="j" class="project--image web" src="./assets/images/Project9.png" alt="Project9"></li>
+              <li class="project--item"><img id="l" class="project--image graphic" src="./assets/images/Project10.png" alt="Project10"></li>
+              <li class="project--item"><img id="k" class="project--image artwork" src="./assets/images/Project11.png" alt="Project11"></li>
+              <li class="project--item"><img id="n" class="project--image web" src="./assets/images/Project12.png" alt="Project12"></li>
             </ul>
           </div>  
         </section>
@@ -184,7 +183,7 @@
                       <li class="alert--item"><span id="topic"></span><span id="topic-value"></span></li>
                       <li class="alert--item textarea"><span id="description"></span><span id="description-value"></span></li>
                     </ul>
-                    <button class="form--button" id="ok">OK</button>
+                    <button class="form--button ok" id="ok">OK</button>
                   </div>
                 </div>
                 
