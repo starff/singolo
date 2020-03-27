@@ -71,11 +71,13 @@ function onScroll() {
     burger.style.transition = '0.5s';
     nav.classList.remove('burger_menu');
     nav.classList.add('navigation_menu');
+    document.querySelector('.burger_shadow').style.display = 'none';
    }else {
     burger.style.transform = 'rotate(90deg)';
     burger.style.transition = '0.5s';
     nav.classList.remove('navigation_menu');
     nav.classList.add('burger_menu');
+    document.querySelector('.burger_shadow').style.display = 'block';
    }
    event.target.classList.remove('burger_menu');
  }));  
@@ -84,6 +86,7 @@ nav.addEventListener('click', ((event) => {
   nav.classList.add('navigation_menu');
   burger.style.transform = 'rotate(0deg)';
   burger.style.transition = '0.5s';
+  document.querySelector('.burger_shadow').style.display = 'none';
 })); 
 //slider
 let items = document.querySelectorAll('.slide');

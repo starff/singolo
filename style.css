@@ -65,7 +65,7 @@ section {
   font-size: 25px;
   line-height: 6px;
   color: #ffffff;
-  font-family: "Lato";
+  font-family: "Lato", Verdana, sans-serif;
   font-weight: 700;
   text-align: left;
   letter-spacing: -0.15px;
@@ -74,7 +74,7 @@ section {
   font-size: 25px;
   line-height: 6px;
   color: #c9605c;
-  font-family: "Lato";
+  font-family: "Lato", Verdana, sans-serif;
   font-weight: 700;
   text-align: left;
 }
@@ -98,7 +98,7 @@ section {
   height: 100vh;
   background: #2D303A;
   box-shadow: 0px -40px 20px rgba(0, 0, 0, 0.4);
-  z-index: 3;
+  z-index: 10;
   display: none;
 }
 .navigation_menu--item {
@@ -110,7 +110,7 @@ section {
   font-size: 12px;
   line-height: 6px;
   color: #ffffff;
-  font-family: "Lato";
+  font-family: "Lato", Verdana, sans-serif;
   font-weight: 700;
   text-align: left;
   padding-top: 6px;
@@ -123,7 +123,7 @@ section {
   left: 13px;
   font-weight: 700;
   font-size: 19px;
-  font-family: "Lato";
+  font-family: "Lato", Verdana, sans-serif;
   color: #494e62;
 }
 .navigation_menu--item:last-child {
@@ -349,7 +349,7 @@ width: 100%;
   font-size: 30px;
   line-height: 35px;
   color: #666d89;
-  font-family: "Lato-Black";
+  font-family: "Lato-Black", Verdana, sans-serif;
   font-weight: 900;
   text-align: left;
   margin-top: 59px;
@@ -359,7 +359,7 @@ width: 100%;
   font-size: 18px;
   line-height: 30px;
   color: #767e9e;
-  font-family: "Lato";
+  font-family: "Lato", Verdana, sans-serif;
   font-weight: 300;
   margin-top: 20px;
   text-align: justify;
@@ -400,7 +400,7 @@ width: 100%;
   font-size: 18px;
   line-height: 18px;
   color: #666d89;
-  font-family: "Lato-Black";
+  font-family: "Lato-Black", Verdana, sans-serif;
   font-weight: 900;
   text-align: left;
 }
@@ -413,7 +413,7 @@ width: 100%;
   font-size: 12px;
   line-height: 22px;
   color: #767e9e;
-  font-family: "Lato";
+  font-family: "Lato", Verdana, sans-serif;
   font-weight: 400;
   margin-top: 10px;
   text-align: justify;
@@ -432,7 +432,7 @@ width: 100%;
   font-size: 30px;
   line-height: 18px;
   color: #666d89;
-  font-family: "Lato-Black";
+  font-family: "Lato-Black", Verdana, sans-serif;
   font-weight: 900;
   text-align: left;
   margin-top: 69px;
@@ -444,7 +444,7 @@ width: 100%;
   font-size: 18px;
   line-height: 30px;
   color: #767e9e;
-  font-family: "Lato";
+  font-family: "Lato", Verdana, sans-serif;
   font-weight: 300;
   text-align: justify;
   margin-top: 28px;
@@ -462,7 +462,7 @@ width: 100%;
   font-size: 12px;
   line-height: 20px;
   color: #767e9e;
-  font-family: "Lato";
+  font-family: "Lato", Verdana, sans-serif;
   font-weight: 400;
   text-align: justify;
   padding: 0px 7px 0px 7px;
@@ -538,7 +538,7 @@ width: 100%;
   font-size: 30px;
   line-height: 18px;
   color: #666d89;
-  font-family: "Lato-Black";
+  font-family: "Lato-Black", Verdana, sans-serif;
   font-weight: 900;
   text-align: left;
   margin-top: 69px;
@@ -551,7 +551,7 @@ width: 100%;
   font-size: 18px;
   line-height: 30px;
   color: #767e9e;
-  font-family: "Lato";
+  font-family: "Lato", Verdana, sans-serif;
   font-weight: 300;
   text-align: justify;
   margin-top: 27px;
@@ -570,7 +570,7 @@ width: 100%;
   font-size: 18px;
   line-height: 18px;
   color: #666d89;
-  font-family: "Lato-Black";
+  font-family: "Lato-Black", Verdana, sans-serif;
   font-weight: 900;
   text-align: left;
   margin-top: 14px;
@@ -584,7 +584,7 @@ width: 100%;
   font-size: 12px;
   line-height: 22px;
   color: #767e9e;
-  font-family: "Lato";
+  font-family: "Lato", Verdana, sans-serif;
   font-weight: 400;
   text-align: justify;
   margin-top: 9px;
@@ -637,7 +637,7 @@ width: 100%;
   font-size: 30px;
   line-height: 18px;
   color: #f0d8d9;
-  font-family: "Lato-Black";
+  font-family: "Lato-Black", Verdana, sans-serif;
   font-weight: 900;
   text-align: left;
   margin-top: 69px;
@@ -650,7 +650,7 @@ width: 100%;
   font-size: 18px;
   line-height: 30px;
   color: #f0d8d9;
-  font-family: "Lato";
+  font-family: "Lato", Verdana, sans-serif;
   font-weight: 300;
   text-align: justify;
   margin-top: 28px;
@@ -675,7 +675,7 @@ width: 100%;
   font-size: 12px;
   line-height: 22px;
   color: #f48c8f;
-  font-family: "Lato";
+  font-family: "Lato", Verdana, sans-serif;
   font-weight: 400;
   text-align: left;
   margin-left: 10px;
@@ -696,7 +696,7 @@ width: 100%;
   color: #f48c8f;
   font-size: 12px;
   line-height: 22px;
-  font-family: "Lato";
+  font-family: "Lato", Verdana, sans-serif;
   font-weight: 400;
   text-align: left;
   letter-spacing: 0.1px;
@@ -708,7 +708,7 @@ width: 100%;
   background-color: #d6564f;
   line-height: 22px;
   color: #f48c8f;
-  font-family: "Lato";
+  font-family: "Lato", Verdana, sans-serif;
   font-weight: 400;
   text-align: center;
   width: 75px;
@@ -725,7 +725,7 @@ width: 100%;
   font-size: 18px;
   line-height: 18px;
   color: #f0d8d9;
-  font-family: "Lato";
+  font-family: "Lato", Verdana, sans-serif;
   font-weight: 900;
   text-align: left;
   letter-spacing: 0.6px;
@@ -737,7 +737,7 @@ width: 100%;
   font-size: 12px;
   line-height: 22px;
   color: #f0d8d9;
-  font-family: "Lato";
+  font-family: "Lato", Verdana, sans-serif;
   font-weight: 400;
   text-align: justify;
   margin-top: 10px;
@@ -753,7 +753,7 @@ width: 100%;
   text-decoration: none;
   line-height: 22px;
   color: #f0d8d9;
-  font-family: "Lato";
+  font-family: "Lato", Verdana, sans-serif;
   font-weight: 400;
   text-align: left;
   margin-left: 23px;
@@ -789,7 +789,7 @@ width: 100%;
   font-size: 12px;
   line-height: 22px;
   color: #f0d8d9;
-  font-family: "Lato";
+  font-family: "Lato", Verdana, sans-serif;
   font-weight: 400;
   text-align: left;
   letter-spacing: -0.2px;
@@ -802,7 +802,7 @@ width: 100%;
   font-size: 12px;
   line-height: 22px;
   color: #f0d8d9;
-  font-family: "Lato";
+  font-family: "Lato", Verdana, sans-serif;
   font-weight: 400;
   text-align: left;
   letter-spacing: 0.1px;
@@ -818,7 +818,7 @@ width: 100%;
   margin-top: 15px;
   color: #666d89;
   font-size: 12px;
-  font-family: "Lato";
+  font-family: "Lato", Verdana, sans-serif;
   cursor: pointer;
   word-spacing: -0.8px;
 }
@@ -865,8 +865,9 @@ width: 100%;
   display: none;
   width: 100vw;
   height: 100vh;
-  background-color: white;
-  opacity: 0.8;
+  background: #2D303A;
+  opacity: 0.6;
+  z-index: 4;
 }
 .alert {
   position: fixed;
@@ -877,15 +878,14 @@ width: 100%;
   background-color: #240303;
   border: 3px solid #a15353;
   border-radius: 5px;
-  opacity: 1;
-  z-index: 10;
+  z-index: 100;
 }
 .alert--name {
   color: #cea8aa;
   font-size: 20px;
   text-align: center;
   width: 100%;
-  font-family: "Lato";
+  font-family: "Lato", Verdana, sans-serif;
   font-weight: 900;
 }
 .alert--item {
@@ -893,7 +893,7 @@ width: 100%;
   font-size: 14px;
   width: 90%;
   line-height: 20px;
-  font-family: "Lato";
+  font-family: "Lato", Verdana, sans-serif;
   font-weight: 400;
   text-align: left;
   letter-spacing: 0.1px;
@@ -910,6 +910,17 @@ width: 100%;
 }
 .textarea {
   height: 75px;
+}
+.burger_shadow {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+  background: #2D303A;
+  opacity: 0.6;
+  z-index: 5;
+  display: none;
 }
 
 @media(max-width: 1019px) {
@@ -1323,6 +1334,11 @@ width: 100%;
   }
   .wrapper {
     justify-content: center;
+  }
+  .alert {
+    top: calc(50% - 100px);
+    left: 0px;
+    width: 100%;
   }
 }
 
