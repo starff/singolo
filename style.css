@@ -629,7 +629,7 @@ width: 100%;
   border-top: 95px solid transparent;
 	margin-top: -95px;
   height: auto;
-  padding-bottom: 64px;
+  padding-bottom: 16px;
   background-color: #f06c64;
   box-shadow: inset 0px -6px 0px 0px #ea676b;
 }
